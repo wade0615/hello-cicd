@@ -1,3 +1,4 @@
+# circle.yml
 version: 2.1
 orbs:
   node: circleci/node@1.1.6
@@ -16,7 +17,6 @@ workflows:
       jobs:
         - build-and-test
 
-# circle.yml
 machine:
   # 環境改成 docker
   services:
